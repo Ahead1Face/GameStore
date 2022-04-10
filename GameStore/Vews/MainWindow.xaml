@@ -6,26 +6,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStore"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="{StaticResource LogoVP}"/>
-        </Grid.Background>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="80*"/>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="40*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70*"/>
-            <ColumnDefinition Width="270*"/>
-            <ColumnDefinition Width="440*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="TBLogin"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="None">
+    <Grid x:Name="MainGrid">
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="{StaticResource LogoVP}"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="40*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="270*"/>
+                <ColumnDefinition Width="440*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="TBLogin"
                  Grid.Row="1" 
                  Grid.Column="1" 
                  Background="#FF3B3A53"
@@ -33,38 +34,48 @@
                  Cursor="Arrow"
                  VerticalContentAlignment="Center"
                  materialDesign:HintAssist.Hint="Логин"
+                 
                  Style="{StaticResource MaterialDesignOutlinedTextBox}"
                  
         />
-        <TextBox x:Name="TBReg" 
-                 Grid.Row="3" 
+            <TextBox x:Name="TBReg" 
+                 Grid.Row="2" 
                  Grid.Column="1"
                  Background="#FF3B3A53"
                  FontSize="14"
                  Cursor="Arrow"
                  VerticalContentAlignment="Center"
                  materialDesign:HintAssist.Hint="Пароль"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                 Style="{StaticResource MaterialDesignOutlinedTextBox}" 
+                 Grid.ColumnSpan="2" 
+                 HorizontalAlignment="Left" 
+                 Margin="0,45,0,0" Grid.RowSpan="2"
+                 Width="277"
         />
-        <Grid Grid.Row="5" Grid.Column="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100*"/>
-                <ColumnDefinition Width="30*"/>
-                <ColumnDefinition Width="100*"/>
-            </Grid.ColumnDefinitions>
-            <Button x:Name="bLogin"
+            <Grid Grid.Row="5" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="30*"/>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="bLogin"
                     Grid.Column="0"
                     Content="ВОЙТИ"
                     VerticalContentAlignment="Center"
-                    FontSize="14"
+                    FontSize="12"
                     
             />
-            <Button x:Name="bReg"
+                <Button x:Name="bReg"
                     Grid.Column="2"
                     Content="РЕГИСТРАЦИЯ"
                     VerticalContentAlignment="Center"
-                    FontSize="14"
+                    FontSize="12"
             />
+            </Grid>
         </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="500*"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Window>

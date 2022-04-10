@@ -25,3 +25,7 @@ D:\Сатонин.А.В\GameStore\GameStore\obj\Debug\net5.0-windows\App.baml
 D:\Сатонин.А.В\GameStore\GameStore\bin\Debug\net5.0-windows\MaterialDesignColors.dll
 D:\Сатонин.А.В\GameStore\GameStore\bin\Debug\net5.0-windows\MaterialDesignThemes.Wpf.dll
 D:\Сатонин.А.В\GameStore\GameStore\obj\Debug\net5.0-windows\GameStore.csproj.CopyComplete
+D:\Сатонин.А.В\GameStore\GameStore\obj\Debug\net5.0-windows\CustomControll\WindowsBorder.g.cs
+D:\Сатонин.А.В\GameStore\GameStore\obj\Debug\net5.0-windows\CustomControll\WindowsBorder.baml
+D:\Сатонин.А.В\GameStore\GameStore\obj\Debug\net5.0-windows\Vews\RegWindow.g.cs
+D:\Сатонин.А.В\GameStore\GameStore\obj\Debug\net5.0-windows\Vews\RegWindow.baml

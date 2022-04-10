@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\G2Logo.jpg" />
     <None Remove="Images\LogoVP.jpg" />
   </ItemGroup>
 
@@ -15,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\G2Logo.jpg" />
     <Resource Include="Images\LogoVP.jpg" />
   </ItemGroup>
 

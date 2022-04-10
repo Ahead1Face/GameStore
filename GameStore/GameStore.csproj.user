@@ -7,10 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="CustomControll\WindowsBorder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vews\RegWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CustomControll\WindowsBorder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Dictionary.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vews\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vews\RegWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

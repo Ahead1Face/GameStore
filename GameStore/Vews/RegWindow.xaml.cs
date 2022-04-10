@@ -10,23 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using GameStore.CustomControll;
 
 namespace GameStore.Vews
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для RegWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RegWindow : Window
     {
-        public MainWindow()
+        public RegWindow()
         {
             InitializeComponent();
-            WindowsBorder windowBorder = new WindowsBorder(this);
-            windowBorder.SetValue(Grid.RowProperty, 0);
-            MainGrid.Children.Add(windowBorder);
         }
     }
 }
