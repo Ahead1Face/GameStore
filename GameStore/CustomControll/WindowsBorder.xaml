@@ -20,8 +20,8 @@
                 HorizontalContentAlignment="Center"
                 Click="bHide_Click"
                 Cursor="Hand" 
-                Background="#FF9B7AD4"
-                Foreground="#FF7D7D1E"
+                Background="#FFFD8484"
+                Foreground="Red"
                 BorderBrush="Gray"
                 />
 
@@ -32,8 +32,8 @@
                 VerticalContentAlignment="Center"
                 Click="Close_Click" 
                 Cursor="Hand" 
-                Background="#FF9B7AD4" 
-                Foreground="#DD6E6E00"
+                Background="#FFFD8484" 
+                Foreground="#DDFF0000"
                 BorderBrush="Gray"
                 />
     </Grid>

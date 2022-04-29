@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GameStore.CustomControll;
+using GameStore.ViewModel;
 
 namespace GameStore.Vews
 {
@@ -27,6 +28,11 @@ namespace GameStore.Vews
             WindowsBorder windowBorder = new WindowsBorder(this);
             windowBorder.SetValue(Grid.RowProperty, 0);
             MainGrid.Children.Add(windowBorder);
+        }
+
+        private void bReg_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
