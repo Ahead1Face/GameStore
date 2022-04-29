@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Сатонин.А.В\\GameStore\\GameStore\\GameStore.csproj": {}
+    "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj": {}
   },
   "projects": {
-    "D:\\Сатонин.А.В\\GameStore\\GameStore\\GameStore.csproj": {
+    "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Сатонин.А.В\\GameStore\\GameStore\\GameStore.csproj",
+        "projectUniqueName": "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj",
         "projectName": "GameStore",
-        "projectPath": "D:\\Сатонин.А.В\\GameStore\\GameStore\\GameStore.csproj",
+        "projectPath": "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj",
         "packagesPath": "C:\\Users\\Win10m\\.nuget\\packages\\",
-        "outputPath": "D:\\Сатонин.А.В\\GameStore\\GameStore\\obj\\",
+        "outputPath": "C:\\Satonin\\GameStore\\GameStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\Win10m\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0-windows7.0"
@@ -46,6 +44,10 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[4.4.0, )"
@@ -61,6 +63,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -69,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

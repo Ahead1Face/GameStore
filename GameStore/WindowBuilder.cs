@@ -10,6 +10,7 @@ namespace GameStore
 {
     class WindowBuilder
     {
+        
         public static void ShowMainWondow()
         {
             var mainWindow = new MainWindow();
@@ -22,10 +23,19 @@ namespace GameStore
         public static void ShowRegWindow()
         {
             var regwindow = new RegWindow();
-            var viewModel = new MainWindowModel();
+            var viewModel = new RegWindowModel();
             regwindow.DataContext = viewModel;
             viewModel.EventCloseWindow += (sender, args) => { regwindow.Close(); };
             regwindow.Show();
+        }
+
+        public static void ShowStoreWindow()
+        {
+            StoreWindow storeWindow = new StoreWindow();
+            var viewModel = new StoreWindowModel();
+            storeWindow.DataContext = viewModel;
+            viewModel.EventCloseWindow += (sender, args) => { storeWindow.Close(); };
+            storeWindow.Show();
         }
     }
 }

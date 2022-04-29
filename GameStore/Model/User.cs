@@ -23,5 +23,14 @@ namespace GameStore.Model
             Password = "";
             Avatar = new byte[0];
         }
+
+        public User(int id, string login, string email, string password)
+        {
+            Id = id;
+            Login = login;
+            Email = email;
+            Password = password;
+            Avatar = new byte[0];
+        }
     }
 }

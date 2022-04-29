@@ -12,12 +12,34 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="MaterialDesignThemes" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\G2Logo.jpg" />
     <Resource Include="Images\LogoVP.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\Game\AC_Valhalla.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Game\CSGO.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Game\Cyberpunk-2077.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Game\Forza_Horizon_5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Game\GTAV.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\Game\Mortal_Kombat_11.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
