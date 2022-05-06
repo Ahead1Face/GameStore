@@ -34,5 +34,16 @@ namespace GameStore.Vews
         {
             
         }
+
+        private void TBLogin_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            bool res = LoginData.CheckLogin(TBLogin.Text);
+            TBLogin.Foreground = res ? new SolidColorBrush(Colors.Green) : new SolidColorBrush(Colors.Red);
+        }
+
+        private void pbPassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            pbPassword.Foreground = LoginData.CheckPassword(pbPassword.Password) ? new SolidColorBrush(Colors.Green) : new SolidColorBrush(Colors.Red);
+        }
     }
 }

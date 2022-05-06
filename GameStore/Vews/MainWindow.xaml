@@ -39,11 +39,13 @@
                  Cursor="Arrow"
                  VerticalContentAlignment="Center"
                  materialDesign:HintAssist.Hint="Логин"
-                 
+			     TextChanged="TBLogin_TextChanged"
+                 Text="{Binding CurrentUserLogin, UpdateSourceTrigger=PropertyChanged}"
                  Style="{StaticResource MaterialDesignOutlinedTextBox}"
                  
         />
-            <TextBox x:Name="TBReg" 
+			<PasswordBox x:Name="pbPassword" 
+				 PasswordChanged="pbPassword_PasswordChanged"
                  Grid.Row="2" 
                  Grid.Column="1"
                  Background="#FF3B3A53"
@@ -51,7 +53,7 @@
                  Cursor="Arrow"
                  VerticalContentAlignment="Center"
                  materialDesign:HintAssist.Hint="Пароль"
-                 Style="{StaticResource MaterialDesignOutlinedTextBox}" 
+                 Style="{StaticResource MaterialDesignFilledPasswordBox}" 
                  Grid.ColumnSpan="2" 
                  HorizontalAlignment="Left" 
                  Margin="0,45,0,0" Grid.RowSpan="2"
@@ -68,6 +70,8 @@
                         Content="ВОЙТИ"
                         VerticalContentAlignment="Center"
                         FontSize="12"
+						Command="{Binding LoginUser}"
+						CommandParameter="{Binding ElementName=pbPassword}"
                     
             />
                 <Button x:Name="bReg"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj": {}
+    "C:\\ученики\\Сатонин\\GameStore\\GameStore\\GameStore.csproj": {}
   },
   "projects": {
-    "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj": {
+    "C:\\ученики\\Сатонин\\GameStore\\GameStore\\GameStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj",
+        "projectUniqueName": "C:\\ученики\\Сатонин\\GameStore\\GameStore\\GameStore.csproj",
         "projectName": "GameStore",
-        "projectPath": "C:\\Satonin\\GameStore\\GameStore\\GameStore.csproj",
+        "projectPath": "C:\\ученики\\Сатонин\\GameStore\\GameStore\\GameStore.csproj",
         "packagesPath": "C:\\Users\\Win10m\\.nuget\\packages\\",
-        "outputPath": "C:\\Satonin\\GameStore\\GameStore\\obj\\",
+        "outputPath": "C:\\ученики\\Сатонин\\GameStore\\GameStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,12 +63,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.16, 5.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -77,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

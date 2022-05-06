@@ -36,11 +36,12 @@
                 <ColumnDefinition Width="270*"/>
                 <ColumnDefinition Width="440*"/>
             </Grid.ColumnDefinitions>
-            <TextBox Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Cursor="Arrow"/>
-            <TextBox Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Cursor="Arrow"/>
-            <PasswordBox Grid.Column="1" Grid.Row="5" VerticalContentAlignment="Center" FontSize="16"/>
-            <PasswordBox Grid.Column="1" Grid.Row="7" VerticalContentAlignment="Center" FontSize="16"/>
-            <Grid Grid.Row="9" Grid.Column="1">
+            <TextBox x:Name="TBLogin" Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Cursor="Arrow"
+					 Text="{Binding NewUserLogin}" TextChanged="TextBox_TextChanged"/>
+            <TextBox  x:Name="TBEmail" Grid.Row="3" Grid.Column="1" VerticalContentAlignment="Center" FontSize="16" Foreground="White" Cursor="Arrow"
+					 Text="{Binding NewUserEmail}" TextChanged="TextBox_TextChanged_1"/>
+			<PasswordBox x:Name="pb1" Grid.Column="1" Grid.Row="5" VerticalContentAlignment="Center" FontSize="16" PasswordChanged="pb1_PasswordChanged"/>
+			<Grid Grid.Row="9" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100*"/>
                     <ColumnDefinition Width="30*"/>
@@ -48,7 +49,7 @@
                 </Grid.ColumnDefinitions>
                 <Button x:Name="B_Back" Grid.Column="0" Content="Назад" Click="B_Back_Click"
                         Command="{Binding ChangeToMainWindow}"/>
-                <Button Grid.Column="2" Content="Регистрация"/>
+                <Button Grid.Column="2" Content="Регистрация" Command="{Binding AddNewUser}" CommandParameter="{Binding ElementName=pb1}"/>
             </Grid>
         </Grid>
     </Grid>

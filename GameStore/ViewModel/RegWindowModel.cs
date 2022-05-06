@@ -6,7 +6,9 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using GameStore.Commands;
+using GameStore.Model;
 using GameStore.Vews;
 
 namespace GameStore.ViewModel
@@ -26,7 +28,7 @@ namespace GameStore.ViewModel
             set
             {
                 newUserLogin = value;
-                //OnPropertyChanged("NewUserLogin");
+                OnPropertyChanged("NewUserLogin");
             }
         }
 
@@ -36,7 +38,7 @@ namespace GameStore.ViewModel
             set
             {
                 newUserEmail = value;
-                //OnPropertyChanged("NewUserEmail");
+                OnPropertyChanged("NewUserEmail");
             }
         }
 
@@ -59,5 +61,38 @@ namespace GameStore.ViewModel
             }
         }
         public void CloseWindow() => EventCloseWindow?.Invoke(this, EventArgs.Empty);
+
+        private Command addNewUser;
+        public Command AddNewUser
+        {
+            get
+            {
+                return addNewUser ??
+                    (addNewUser = new Command(obj =>
+                    {
+                        using(DBStore db = new DBStore())
+                        {
+                            PasswordBox pb = (PasswordBox)obj;
+                            string? password = pb.Password;
+                            User? user = db.User.Where(u => u.Login == newUserLogin).FirstOrDefault();
+
+                            if(user == null && LoginData.CheckLogin(newUserLogin) && 
+                            LoginData.CheckEmail(newUserEmail) && LoginData.CheckPassword(pb.Password))
+                            {
+                                int maxId = db.User.Max(u => u.Id);
+                                User newUser = new User(maxId +1, newUserLogin, newUserEmail, password);
+                                db.User.Add(newUser);
+                                db.SaveChanges();
+                                LoginData.MoveStore(maxId +1, newUserLogin,newUserEmail);
+                                CloseWindow();
+                            }
+                            else
+                            {
+                            MessageBox.Show("Пользователь уже существует или данные неверные");
+                            }
+                        }   
+                    }));
+            }
+        }
     }
 }
