@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\ученики\Сатонин\GameStore\GameStore\obj\Debug\net5.0-windows\
+D:\Сатонин\GameStore\GameStore\obj\Debug\net5.0-windows\
 GameStore
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\ученики\Сатонин\GameStore\GameStore\App.xaml
-5-1426108205
+D:\Сатонин\GameStore\GameStore\App.xaml
+62015577724
 
-161945669956
+171348599860
 1981974439778
-CustomControll\WindowsBorder.xaml;Dictionary.xaml;Vews\MainWindow.xaml;Vews\RegWindow.xaml;Vews\StoreWindow.xaml;
+CustomControll\StoreBorder.xaml;CustomControll\WindowsBorder.xaml;Dictionary.xaml;Vews\MainWindow.xaml;Vews\RegWindow.xaml;Vews\StoreWindow.xaml;
 
 False
 

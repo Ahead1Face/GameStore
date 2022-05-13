@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStore.Vews"
         mc:Ignorable="d"
-        Title="StoreWindow" Height="450" Width="800">
-    <Grid>
+        Title="StoreWindow" Height="450" Width="800" AllowsTransparency="True" 
+        WindowStyle="None" ResizeMode="CanResizeWithGrip">
+    <Grid x:Name="StoreGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer Grid.Column="1"
+                          Background="Gray">
+                <Grid x:Name="GameGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="300*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="300"/>
+                        <ColumnDefinition Width="20"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
         
     </Grid>
 </Window>

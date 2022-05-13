@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vqqn8g0KVtkxwSzwGtg8h+A0HlKutwYeB18eSQ4/ZVB25rc3aCls73qx07kFwkIPz9CTgLf7RgMvAAo0qegS1A==",
+  "dgSpecHash": "DntuVFGtpcNohsb+GpSwhZicKNyetU//G2JxG7lx+WCafvdcJwxqAJ9+VjSj4KKBfrHFEZBAJjmKdfbehUNcmA==",
   "success": true,
-  "projectFilePath": "C:\\ученики\\Сатонин\\GameStore\\GameStore\\GameStore.csproj",
+  "projectFilePath": "D:\\Сатонин\\GameStore\\GameStore\\GameStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Win10m\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Win10m\\.nuget\\packages\\materialdesigncolors\\2.0.5\\materialdesigncolors.2.0.5.nupkg.sha512",
